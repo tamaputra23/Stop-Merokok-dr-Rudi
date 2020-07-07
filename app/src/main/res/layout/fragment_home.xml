@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Sesi Pertanyaan"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="252dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linPertanyaan2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Apakah Anda berhasrat untuk merokok saat ini?"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp" />
+        <RadioGroup
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rg_pertanyaan1"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+            <RadioButton
+                android:id="@+id/rb_ya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YA"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_edt"
+                android:checked="true"/>
+            <RadioButton
+                android:id="@+id/rb_tidak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="TIDAK"
+                android:textSize="24sp"
+                android:textColor="@android:color/black"
+                android:background="@drawable/rounded_edt"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/btn_Next2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="130dp"
+            android:background="@drawable/rounded_btn"
+            android:padding="5dp"
+            android:text="Berikutnya"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linPertanyaan1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sudah berapa batang rokok hari ini?"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="24dp" />
+        <Spinner
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:entries="@array/jumlah"
+            android:background="@drawable/rounded_edt"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/spJumlah">
+        </Spinner>
+    <Button
+        android:id="@+id/btn_Next"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/rounded_btn"
+        android:padding="5dp"
+        android:text="Berikutnya"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

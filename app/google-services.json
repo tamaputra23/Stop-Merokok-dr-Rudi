@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "573008863679",
+    "firebase_url": "https://stopmerokok-10159.firebaseio.com",
+    "project_id": "stopmerokok-10159",
+    "storage_bucket": "stopmerokok-10159.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573008863679:android:1b3cee00ef5c229544410a",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573008863679-b9v6cujima66cppiacst93slo7evriap.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.myapplication",
+            "certificate_hash": "ad715bb0edc95d659b4652ecae7403cb260bdc26"
+          }
+        },
+        {
+          "client_id": "573008863679-9dipeo7lv85g9qom88oac77pid90djv3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfq9idX7UlInW8-RBmyvKS-bzZTY_kAM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573008863679-9dipeo7lv85g9qom88oac77pid90djv3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
